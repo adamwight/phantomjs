@@ -1,0 +1,32 @@
+Source: phantomjs
+Section: web
+Priority: extra
+Maintainer: TANIGUCHI Takaki <takaki@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+	libqt4-dev,
+	libjs-coffeescript
+	, libfreetype6-dev
+	, libjpeg-dev
+	, libpng-dev
+	, libsqlite3-dev
+	, libssl-dev
+	, libz-dev
+	, libfontconfig1-dev
+	, libx11-dev
+	, libxext-dev
+Standards-Version: 3.9.3
+Homepage: http://www.phantomjs.org/
+Vcs-Git: git://git.debian.org/collab-maint/phantomjs.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/phantomjs.git;a=summary
+
+Package: phantomjs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: minimalistic headless WebKit-based with JavaScript API
+ PhantomJS is a headless WebKit with JavaScript API. It has fast and native
+ support for various web standards: DOM handling, CSS selector, JSON, Canvas,
+ and SVG.
+ .
+ PhantomJS is an optimal solution for headless testing of web-based
+ applications, site scraping, pages capture, SVG renderer, PDF converter
+ and many other use cases.
