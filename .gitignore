@@ -14,7 +14,6 @@ debian/*.debhelper
 debian/files
 debian/*.log
 debian/*.substvars
-debian/*/
 /deploy/qt-*.tar.gz
 /deploy/Qt-*
 /symbols
@@ -54,4 +53,4 @@ tools/dump_syms.app/
 # Build results
 [Dd]ebug*/
 [Rr]elease/
-bin/
+/bin/
